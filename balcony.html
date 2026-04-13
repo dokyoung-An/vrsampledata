@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR 입주 업체 리스트</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .item-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: inherit;
+            position: relative;
+        }
+
+        .logo-box {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .logo-box img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .info-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            overflow: hidden;
+        }
+
+        .company-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .phone {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .homepage-btn {
+            display: inline-block;
+            margin-top: 4px;
+            padding: 6px 14px;
+            background-color: #1a73e8;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            width: fit-content;
+        }
+
+        .homepage-btn:hover {
+            background-color: #1558c0;
+        }
+
+        .homepage-btn.disabled {
+            background-color: #ccc;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+
+        .call-btn {
+            display: inline-block;
+            padding: 6px 14px;
+            background-color: #34a853;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            width: fit-content;
+        }
+
+        .call-btn:hover {
+            background-color: #2d8f47;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/한땀홈테어.png" alt="한땀홈케어 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">한땀홈케어(줄눈)</div>
+            <div class="phone">010-4965-4115</div>
+            <div class="btn-group">
+                <a href="https://blog.naver.com/hooniyou6236" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+                <a href="tel:01049654115" class="call-btn">전화 연결</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="item-card">
+        <div class="logo-box" style="background-color:#d9d9d9; font-size:11px; color:#888; text-align:center; flex-direction:column; gap:4px;">
+            <span>이미지</span><span>준비중</span>
+        </div>
+        <div class="info-content">
+            <div class="company-name">로버창(실외기실 자동 개폐기)</div>
+            <div class="phone">010-4812-8204</div>
+            <div class="btn-group">
+                <span class="homepage-btn disabled">홈페이지 없음</span>
+                <a href="tel:01048128204" class="call-btn">전화 연결</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/칠통령.png" alt="칠통령 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">칠통령(탄성)</div>
+            <div class="phone">010-3276-4777</div>
+            <div class="btn-group">
+                <a href="https://fill.imweb.me/" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+                <a href="tel:01032764777" class="call-btn">전화 연결</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
