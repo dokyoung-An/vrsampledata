@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR 입주 업체 리스트</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .item-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: inherit;
+            position: relative;
+        }
+
+        .logo-box {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .logo-box img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .info-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            overflow: hidden;
+        }
+
+        .company-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .phone {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .homepage-btn {
+            display: inline-block;
+            margin-top: 4px;
+            padding: 6px 14px;
+            background-color: #1a73e8;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+            width: fit-content;
+        }
+
+        .homepage-btn:hover {
+            background-color: #1558c0;
+        }
+
+        .homepage-btn.disabled {
+            background-color: #ccc;
+            cursor: default;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/창이야기.png" alt="창이야기 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">창이야기(커튼)</div>
+            <div class="phone">031-544-8773 / 010-4280-3131</div>
+            <a href="https://blog.naver.com/ckddldirl22" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/우와도어.jpeg" alt="우와도어 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">우와도어(중문)</div>
+            <div class="phone">031-355-1712 / 031-355-1713</div>
+            <a href="http://www.woowadoor.co.kr" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/한땀홈테어.png" alt="한땀홈케어 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">한땀홈케어(돌눈)</div>
+            <div class="phone">010-4965-4115</div>
+            <a href="https://blog.naver.com/hooniyou6236" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/라이트나노.png" alt="라이트나노 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">라이트나노(나노)</div>
+            <div class="phone">1544-4341 / 010-8494-4341</div>
+            <a href="https://www.lightnanocoating.com/" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/3M.jpg" alt="3M 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">3M(단열필름)</div>
+            <div class="phone">031-922-3009 / 010-2262-1659</div>
+            <a href="https://m.blog.naver.com/PostList.naver?blogId=legend-119&tab=1" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/윈가드.png" alt="윙가드 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">윙가드(방충망)</div>
+            <div class="phone">010-4812-8204</div>
+            <a href="https://blog.naver.com/jcdkk00" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="https://via.placeholder.com/80" alt="삼성전자 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">삼성전자(전자)</div>
+            <div class="phone">010-8749-2477</div>
+            <a href="https://m.booking.naver.com/booking/5/bizes/437397/items/3673364?area=pll&lang=ko&startDateTime=2026-04-03T00%3A00%3A00%2B09%3A00&theme=place" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/헬로매트.jpg" alt="헬로매트 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">헬로매트(매트)</div>
+            <div class="phone">010-3179-0706</div>
+            <a href="https://hellomat.co.kr/" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/한땀홈테어.png" alt="한땀홈케어 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">한땀홈케어(청소)</div>
+            <div class="phone">010-4965-4115</div>
+            <a href="https://blog.naver.com/hooniyou6236" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/뽀드득클린.png" alt="뽀드득클린 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">뽀드득클린(청소)</div>
+            <div class="phone">010-6486-9976</div>
+            <a href="https://bboddeuk.co.kr/" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box" style="background-color:#d9d9d9; font-size:11px; color:#888; text-align:center; flex-direction:column; gap:4px;">
+            <span>이미지</span><span>준비중</span>
+        </div>
+        <div class="info-content">
+            <div class="company-name">로버창(실외기실 자동 개폐기)</div>
+            <div class="phone">010-4812-8204</div>
+            <span class="homepage-btn disabled">홈페이지 없음</span>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/휴젠트.png" alt="휴젠트 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">휴젠트(욕실 환기팬)</div>
+            <div class="phone">010-3360-1679</div>
+            <a href="https://blog.naver.com/huzent69" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/젠풀.png" alt="젠풀 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">젠풀(음식물처리기)</div>
+            <div class="phone">010-4800-4010</div>
+            <a href="https://www.zenfull.kr/" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="logo-box">
+            <img src="img/칠통령.png" alt="칠통령 로고">
+        </div>
+        <div class="info-content">
+            <div class="company-name">칠통령(탄성)</div>
+            <div class="phone">010-3276-4777</div>
+            <a href="https://fill.imweb.me/" target="_blank" class="homepage-btn">홈페이지 바로가기</a>
+        </div>
+    </div>
+
+</body>
+</html>
